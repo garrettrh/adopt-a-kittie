@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html ng-app>
+<html ng-app="kittiesApp">
 	<head>
 		<meta charset="utf-8">
 
-		<title>An HTML Page</title>
+		<title>Adopt-A-Kittie</title>
 
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
@@ -14,9 +14,36 @@
 		<link rel="stylesheet" href="css/style.css">
 		
 		<script src="js/angular.js"></script>
-		<script src="js/app.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/KittiesController.js"></script>
 	</head>
 
 	<body>
+
+		<main id="container" ng-controller="KittiesController as kitties">
+			
+			<div class="left-container">
+
+				<h1>Adopt Me! Please! :(</h1>
+
+				<div class="dashed">
+					Test
+				</div>
+				
+			</div>
+
+			<div class="right-container">
+				<h1>I've Been Adopted! Yay! :)</h1>
+
+				<div class="dashed">
+					Test
+				</div>
+
+			</div>
+
+		</main>
+
+
+
 	</body>
 </html>
