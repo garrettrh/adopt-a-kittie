@@ -4,29 +4,43 @@ body {
 	background-image: url('../images/background.png');
 }
 
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+li {
+	list-style-type: none;
+	margin: 40px;
+}
+
 #container {
-	width: 540px;
-	margin: 0 auto;
+	width: 1000px;
+	margin: 0px auto;
+	text-align: center;
 }
 
 .dashed {
-	width: 200px;
-	border: 1px dashed pink;
-	border-radius: 5px;
+	width: 350px;
+	border: 2px dashed pink;
+	border-radius: 50px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 20px 20px;
 	background-color: white;
 }
 
 .left-container, .right-container {
 	display: inline-block;
-	width: 250px;
+	width: 400px;
 	margin: 10;
-	border: 1px solid blue;
-	border-radius: 5px;
+	border: 2px solid lightblue;
+	border-radius: 50px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 20px;
+	padding: 20px;
 	background-color: white;
+	color: black;
+	vertical-align: top;
 }
 
 h1 {

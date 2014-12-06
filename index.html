@@ -27,16 +27,41 @@
 				<h1>Adopt Me! Please! :(</h1>
 
 				<div class="dashed">
-					Test
+					<ul>
+						<li ng-repeat="cat in kitties.catOrphan()">
+							<p>Hi! I'm {{ cat.catName }}!</p>
+							<img src="{{ cat.image }}">
+							<p>I am {{ cat.monthsOld }} months old</p>
+							Adopt? <input type="checkbox" ng-model="cat.adopted">
+						</li>
+					</ul>
 				</div>
 				
 			</div>
 
 			<div class="right-container">
-				<h1>I've Been Adopted! Yay! :)</h1>
+				<h1>I've Been Adopted!</h1>
 
 				<div class="dashed">
-					Test
+					<ul>
+						<li ng-repeat="cat in kitties.catAdopted()">
+							<p>Hi! I'm {{ cat.catName }}!</p>
+							<img src="{{ cat.image }}">
+							<p>I am {{ cat.monthsOld }} month's old.</p>
+							<input type="checkbox" ng-model="cat.adopted">
+						</li>
+					</ul>
+					<!-- <ul>
+						<li> -->
+						<!-- <li ng-repeat="cat in kitties.cat.">
+							{{ cat.catName }}
+							<img src="{{ cat.image }}"> -->
+							<!-- <input class="checkbox" type="checkbox" ng-model="todo.done">
+							<span ng-class="{'done': todo.done}">{{ todo.task }} {{ todo.separate }} {{ todo.created | date: 'short' }}</span> -->
+						<!-- </li>
+							
+					</ul>
+					Test -->
 				</div>
 
 			</div>

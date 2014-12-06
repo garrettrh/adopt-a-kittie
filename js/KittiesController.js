@@ -11,7 +11,7 @@ angular
 			monthsOld: 5,
 			gender: 'boy',
 			image: "images/carl.png",
-			adopted: true,
+			adopted: false,
 		},
 		{
 			catName: 'Jack',
@@ -35,6 +35,18 @@ angular
 			adopted: false
 		}
 
-	]
+	];
 
-};
+	this.catAdopted = catAdopted;
+	this.catOrphan = catOrphan;
+
+	function catAdopted(){
+			return this.cat.filter(function(x){ return x.adopted == true; });
+		};
+
+	function catOrphan(){
+			return this.cat.filter(function(x){ return x.adopted == false; });
+		};
+
+
+}
