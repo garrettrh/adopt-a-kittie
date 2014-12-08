@@ -12,6 +12,8 @@ ul {
 li {
 	list-style-type: none;
 	margin: 40px;
+	border: 2px dashed pink;
+	border-radius: 50px;
 }
 
 #container {
@@ -22,8 +24,8 @@ li {
 
 .dashed {
 	width: 350px;
-	border: 2px dashed pink;
-	border-radius: 50px;
+/*	border: 2px dashed pink;
+	border-radius: 50px;*/
 	text-align: center;
 	margin: 20px 20px;
 	background-color: white;
